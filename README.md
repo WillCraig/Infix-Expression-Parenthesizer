@@ -1,21 +1,18 @@
 # Infix Expression Parenthesizer
- take infix expression, add parenthesis based on PEMDAS order of operati
+ Take infix expression, add parenthesis based on PEMDAS order of operations.
+
+
+# How to use:
+- Enter your expression with no parenthesis, with a space between each `element`.
+    - Elements include the variables represented in the expression (letters, numbers, strings) and operators
+    - OPERATORS: `^*/+-`
 
 
 
-
-## How it works (now)
-The program will only work with expressions without parenthesis for right now. (more later...)
-
-write in the expression with a space between each "part" of the expression
-
-A + B + C * D
-
-this will return...
-
-( ( A + B ) + ( C * D ) )
+# Current Limitations
+- The program does not work with parenthesis within the input expression
 
 
-Order of expressions: ()^*/+-
-
-
+# Example input/output
+input:  a * b + c * a / b - c ^ d
+output: ( ( ( a * b ) + ( ( c * a ) / b ) ) - ( c ^ d ) )

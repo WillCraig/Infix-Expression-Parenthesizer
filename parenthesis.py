@@ -1,10 +1,11 @@
-
+# William Craig
+# Simple Infix Parenthesizer
 
 def parenthesize(raw_expr: str):
     expr = raw_expr.split(" ")
     # ()^*/+-
     # make the first pass and make first check
-    operand_lst = [')', '^', '*', '/', '+', '-']
+    operand_lst = ['^', '*', '/', '+', '-']
     for op in operand_lst:
         i = 0
         while i < len(expr):
@@ -20,14 +21,7 @@ def parenthesize(raw_expr: str):
 
 
 if __name__ == '__main__':
+    # please enter the expression as a string with a space between each element ( element being variable, number, or valid operator(['^', '*', '/', '+', '-']))
     expr = "a * b + c * a / b - c ^ d"
-    solved = "( ( ( a * b ) + ( ( c * a ) / b ) ) - ( c ^ d ) )"
-
-    attempt = parenthesize(expr)
-
-    print("Attempt:" + attempt + ".")
-
-    if (attempt == solved):
-        print("it worked!!")
-    else:
-        print("maybe next time")
+    print(f"input:  {expr}\n")
+    print(f"output: {parenthesize(expr)}\n")
