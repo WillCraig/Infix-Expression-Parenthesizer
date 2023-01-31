@@ -14,5 +14,7 @@
 
 
 # Example input/output
-input:  a * b + c * a / b - c ^ d
-output: ( ( ( a * b ) + ( ( c * a ) / b ) ) - ( c ^ d ) )
+input:  `a * b + c * a / b - c ^ d`
+
+
+output: `( ( ( a * b ) + ( ( c * a ) / b ) ) - ( c ^ d ) )`
